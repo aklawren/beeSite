@@ -6,13 +6,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style type="text/css">
     body {
         background-color: #ffc73c;;
         margin: 0;
         padding: 0;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        
     }
     section {
         width: 600px;
@@ -22,72 +22,124 @@
         border-radius: 1em;
     }
     a:link, a:visited {
-        color: #38488f;
+        color: black;
         text-decoration: none;
     }
     .article-img{
        object-fit: cover;
-       cursor: pointer;	       
+       cursor: pointer;
        width:150px;
        height:150px;
+       -webkit-margin-end: 10px;
     }
     .inline-text{
        display:inline;
     }
     .article-container{
         margin: 10px;
-    } 
+        display:flex;
+    }
     .articles{
        display:flex;
        flex-direction: row;
        justify-content: space-between;
     }
+    .article-title{
+      font-weight: bold;
+      font-size: large;
+    }
+    .article-intro{
+      font-size:small;
+    }
+    .article-subtext{
+      font-style: italic;
+      font-size:small;
+    }
     img:hover {
       filter: grayscale(1);
       -webkit-filter: grayscale(1);
     }
-    </style>    
+    .styledLink:link{
+      text-decoration: underline;
+    }
+    </style>
 </head>
 
+<!-- <nav style="
+    height: 40px;
+    color: cornflowerblue;
+    background-color: cornflowerblue;
+">
+  <a href="/">ABOUT US</a> |
+  <a href="/">ARTICLES</a> |
+  <a href="/">CONTACT</a> |
+</nav> -->
 <body>
 <section>
     <h1> Welcome to the Bee Keepers Club!</h1>
     <p>This is official site for the bee-keepers club of mid-valley.  If you're passionate about beekeeping, honey, or other things then join us!</p>
 
-    <div> We meet the third Wednesday of each month at <div class="inline-text" title="Richmaid Restaurant 100 S. Cherokee Lane, Lodi CA 95240">Richmaid Restaurant </div>
-    </div> Next meeting:    
+    <div> We meet the third Wednesday of each month at
+      <a class="styledLink" href="https://www.google.com/maps/place/Richmaid+Restaurant/@38.1326142,-121.2601076,15z/data=!4m5!3m4!1s0x0:0x1b04cea8ca031448!8m2!3d38.1326142!4d-121.2601076">
+        Richmaid Restaurant
+      </a>
+    </div> Next meeting:
        <div class="inline-text" style="font-weight: bold;">
-          April 19, 2017 
+          April 19, 2017
        </div>
-    </div>    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.3259065511184!2d-121.2622962851847!3d38.13261417969574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809a9ff7a8b6613f%3A0x1b04cea8ca031448!2sRichmaid+Restaurant!5e0!3m2!1sen!2sus!4v1490492070995" height="300" frameborder="0" style="border:0; width:100%" allowfullscreen></iframe>
+    </div>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.3259065511184!2d-121.2622962851847!3d38.13261417969574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809a9ff7a8b6613f%3A0x1b04cea8ca031448!2sRichmaid+Restaurant!5e0!3m2!1sen!2sus!4v1490492070995" height="300" frameborder="0" style="border:0; width:100%" allowfullscreen></iframe> -->
 
+</section>
+
+
+<section >
+   Upcoming Events
+   <hr />
+   <div class="articles">
+     <a href="./articles/beekeepingClass.pdf">
+       <div class="article-container">
+          <img class="article-img" src="img/beekeeping_class_icon.PNG">
+          <div class="article-text">
+            <div>
+                <span class="article-title"> BeeKeeping I</span>
+                <span class="article-subtext"> April 15, 2017</span>
+            </div>
+            <div class="article-intro"> This class is designed to help the aspiring beekeeper become more knowledgeable about the craft of beekeeping. </div>
+            <div>
+              <span class="article-title"> BeeKeeping II</span>
+              <span class="article-subtext"> August 5, 2017</span>
+            </div>
+            <div class="article-intro"> Building on the foundation set in Beekeeping I, this class will delve deeper into advanced topics as well as  a discussion of the challenges the bees face.  </div>
+          </div>
+         </div>
+       </div>
+     </a>
+   </div>
 </section>
 
 <section >
    Latest bee articles
    <hr />
-   <div class="articles">
+   <p>Our writers are busy spinning up some of their favorite tips and tricks for beekeepers of all experience levels.
+   Please check back soon, or reach out with topics you'd like more info on! </p>
+   <!-- <div class="articles">
    <div class="article-container">
-      <img class="article-img" src="img/beePic1.jpg"> 
+      <img class="article-img" src="img/beePic1.jpg">
       <div class="article-title"> Honey Spinning 101 </div>
    </div>
 
    <div class="article-container">
-      <img class="article-img" src="img/beePic2.jpg"> 
+      <img class="article-img" src="img/beePic2.jpg">
       <div class="article-title"> Wintering your bees </div>
    </div>
 
    <div class="article-container">
-      <img class="article-img" src="img/beePic3.JPG"> 
+      <img class="article-img" src="img/beePic3.JPG">
       <div class="article-title"> Treating for mites </div>
    </div>
-   </div>
+   </div> -->
 </section>
-
-<article style="text-align:center" >
-   Number of visitors to the site: TBD
-</article>
 
 </body>
 </html>
