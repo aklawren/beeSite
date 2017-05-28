@@ -6,63 +6,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style type="text/css">
-    body {
-        background-color: #ffc73c;;
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    section {
-        width: 600px;
-        margin: 5em auto;
-        padding: 50px;
-        background-color: #fff;
-        border-radius: 1em;
-    }
-    a:link, a:visited {
-        color: black;
-        text-decoration: none;
-    }
-    .article-img{
-       object-fit: cover;
-       cursor: pointer;
-       width:150px;
-       height:150px;
-       -webkit-margin-end: 10px;
-    }
-    .inline-text{
-       display:inline;
-    }
-    .article-container{
-        margin: 10px;
-        display:flex;
-    }
-    .articles{
-       display:flex;
-       flex-direction: row;
-       justify-content: space-between;
-    }
-    .article-title{
-      font-weight: bold;
-      font-size: large;
-    }
-    .article-intro{
-      font-size:small;
-    }
-    .article-subtext{
-      font-style: italic;
-      font-size:small;
-    }
-    img:hover {
-      filter: grayscale(1);
-      -webkit-filter: grayscale(1);
-    }
-    .styledLink:link{
-      text-decoration: underline;
-    }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Cookie|Quicksand|Sacramento" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <!-- <nav style="
@@ -75,25 +20,51 @@
   <a href="/">CONTACT</a> |
 </nav> -->
 <body>
-<section>
-    <h1> Welcome to the Bee Keepers Club!</h1>
-    <p>This is official site for the bee-keepers club of mid-valley.  If you're passionate about beekeeping, honey, or other things then join us!</p>
+<section id="mainSection">
+    <h1 id="pageTitle"> Mid-Valley Beekeepers</h1>
+    <p>This is official site for the mid-valley beekeepers club.  If you're passionate about beekeeping, honey, or other things then join us!</p>
 
     <div> We meet the third Wednesday of each month at
       <a class="styledLink" href="https://www.google.com/maps/place/Richmaid+Restaurant/@38.1326142,-121.2601076,15z/data=!4m5!3m4!1s0x0:0x1b04cea8ca031448!8m2!3d38.1326142!4d-121.2601076">
         Richmaid Restaurant
       </a>
     </div> Next meeting:
-       <div class="inline-text" style="font-weight: bold;">
-          April 19, 2017
-       </div>
+       <div id="nextMeeting" class="inline-text" style="font-weight: bold;"></div>
     </div>
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.3259065511184!2d-121.2622962851847!3d38.13261417969574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809a9ff7a8b6613f%3A0x1b04cea8ca031448!2sRichmaid+Restaurant!5e0!3m2!1sen!2sus!4v1490492070995" height="300" frameborder="0" style="border:0; width:100%" allowfullscreen></iframe> -->
 
+</section>
+<section id="content">
+   <div id="tab-bar">
+     <div class="tab">articles</div>
+     <div class="tab">events</div>
+     <div class="tab">resources</div>
+   </div>
+
+   <div id="tabContents">
+     <div id="articles">
+
+     </div>
+
+
+
+     <div>
+
+     </div>
+
+
+
+
+     <div>
+
+     </div>
+
+
+     
+  </div>
 </section>
 
 
-<section >
+<!-- <section >
    Upcoming Events
    <hr />
    <div class="articles">
@@ -139,7 +110,9 @@
       <div class="article-title"> Treating for mites </div>
    </div>
    </div> -->
-</section>
+<!--/section> -->
 
 </body>
+<script type="text/javascript" src="scripts/script.js"></script>
+
 </html>
