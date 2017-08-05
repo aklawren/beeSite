@@ -59,7 +59,7 @@ h1#pageTitle {
     font-family: 'Sacramento', cursive;
 }
 section#mainSection {
-    height: 400px;
+    height: 300px;
     background-color: #47b0d2;
     color: #eee;
     text-align: center;
@@ -75,4 +75,41 @@ div#tab-bar {
     flex-grow: 1;
     border: .5px solid lightgray;
     justify-content: center;
+    cursor: pointer;
+}
+
+/* styling for tab contents */
+.clickableTile {
+  width: 200px;
+  height: 200px;
+  border: 1px solid turquoise;
+  border-radius: 5px;
+  margin: 10px;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: white;
+  opacity: 0.95;
+}
+/*.tileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+span.resource-title-text {
+    font-size: 1.4em;
+    border-bottom: .5px solid lightgray;
+    color: #358098;
+}
+.resource-description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+div#tabContents {
+    padding: 20px;
+}
+.tab.selected{
+    background-color: #eee;
+    box-shadow: -3px 3px 3px lightgray;
+}
+.hidden{
+  display:none;
 }

@@ -70,3 +70,21 @@ function getThirdWednesday(year, month){
    return firstWednesday + 14;
 
 }
+
+function changeTabs(elementId, contentId ){
+  var tabs = document.getElementsByClassName('tab');
+  for (let tab of tabs){
+     tab.classList.remove('selected');
+  }
+  var tab = document.getElementById(elementId);
+  tab.classList.toggle('selected');
+
+  var contents = document.getElementsByClassName('content-pane');
+  for (let content of contents){
+    content.classList.add('hidden');
+  }
+  var content = document.getElementById(contentId);
+  content.classList.toggle('hidden');
+
+
+}

@@ -35,34 +35,95 @@
 </section>
 <section id="content">
    <div id="tab-bar">
-     <div class="tab">articles</div>
-     <div class="tab">events</div>
-     <div class="tab">resources</div>
+     <div class="tab" id='articles-tab' onClick="changeTabs('articles-tab', 'articles')">articles</div>
+     <div class="tab" id='events-tab' onClick="changeTabs('events-tab', 'events')">events</div>
+     <div class="tab selected" id='resources-tab' onClick="changeTabs('resources-tab', 'resources')" >resources</div>
    </div>
 
    <div id="tabContents">
-     <div id="articles">
-
+     <div id="articles" class='content-pane hidden'>
+        Articles coming soon!
      </div>
 
 
 
-     <div>
-
+     <div id="events" class='content-pane hidden'>
+        There are currently no events scheduled, please check back soon!
      </div>
 
 
 
 
-     <div>
-
+     <div id="resources" class='content-pane'>
+       <p> Here are some of our favorite sites saved just for you. </p>
+       <div class="tileContainer">
+         <a href='https://www.mannlakeltd.com'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+                Mannlake Beekeeping Website
+             </span>
+           </div>
+           <div class='resource-description'>
+              A great resource for general beekeeping info.
+           </div>
+         </a>
+         <a href='https://www.dadant.com'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+                Dadant Beekeeping Supply
+             </span>
+           </div>
+           <div class='resource-description'>
+              This is one of our favorite places to get all of your beekeeping supplies.
+           </div>
+         </a>
+         <a href='https://www.dadant.com/learn'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+               Dadant Learning Center
+             </span>
+           </div>
+           <div class='resource-description'>
+              Our trusted resource for learning more about beekeeping (suitable for all levels).
+           </div>
+         </a>
+         <a href = 'http://americanbeejournal.com'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+                American Bee Journal
+             </span>
+           </div>
+           <div class='resource-description'>
+              Great beekeeping articles.
+           </div>
+         </a>
+         <a href= 'http://americanbeejournal.us1.list-manage.com/subscribe?u=5fd2b1aa990e63193af2a573d&id=8cdd94c05c'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+                American Bee Journal, subscription to email news
+             </span>
+           </div>
+           <div class='resource-description'>
+              This is one of our favorite places to get all of your beekeeping supplies.
+           </div>
+         </a>
+         <a href = 'http://www.beeculture.com'>
+           <div class='resource-title'>
+             <span class='resource-title-text'>
+                Bee Culture Magazine
+             </span>
+           </div>
+           <div class='resource-description'>
+              Subscription and subscriptions discounts -- 'Catch the Buzz' email subscribing to current beekeeping news.
+           </div>
+         </a>
+       </div>
      </div>
 
 
-     
+
   </div>
-</section>
-
+</section >
 
 <!-- <section >
    Upcoming Events
