@@ -13,7 +13,7 @@ function getNextMeeting(){
    var thirdWednesday = getThirdWednesday(year, month);
 
    if(date <= thirdWednesday){
-     return formattedNextMeeting(year, month, date);
+     return formattedNextMeeting(year, month, thirdWednesday);
    }
    else{
       //if there is a month left in this year
@@ -37,7 +37,7 @@ function formattedNextMeeting(year, month, date){
 }
 
 function getThirdWednesday(year, month){
-  //determine first day of the month
+  //determinx first day of the month
   var firstDay = new Date(year, month).getDay();
 
   //determine first wednesday of the month
