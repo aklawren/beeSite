@@ -113,3 +113,14 @@ div#tabContents {
 .hidden{
   display:none;
 }
+p.secondaryText {
+    font-style: italic;
+    font-size: .7em;
+    margin-top: 0px;
+}
+
+
+/*div#articles {
+    display: flex;
+    justify-content: space-between;
+}*/

@@ -35,26 +35,31 @@
 </section>
 <section id="content">
    <div id="tab-bar">
-     <div class="tab" id='articles-tab' onClick="changeTabs('articles-tab', 'articles')">articles</div>
+     <div class="tab selected" id='articles-tab' onClick="changeTabs('articles-tab', 'articles')">articles</div>
      <div class="tab" id='events-tab' onClick="changeTabs('events-tab', 'events')">events</div>
-     <div class="tab selected" id='resources-tab' onClick="changeTabs('resources-tab', 'resources')" >resources</div>
+     <div class="tab" id='resources-tab' onClick="changeTabs('resources-tab', 'resources')" >resources</div>
    </div>
 
    <div id="tabContents">
-     <div id="articles" class='content-pane hidden'>
+     <div class='resource-description'>
+        This is where we'll be publishing our articles monthly as well as sharing the best curated content from around the web.
+     </div>
+     <div id="articles" class='content-pane'>
+       <a href='./articles/the-dance.pdf'>
+         <div class='resource-title'>
+           <span class='resource-title-text'>
+             The Dance <p class='secondaryText'>Welcome! From the Mid-Valley Beekeepers Association</p>
+           </span>
+         </div>
+       </a>
        <a href = 'http://americanbeejournal.com'>
          <div class='resource-title'>
            <span class='resource-title-text'>
               American Bee Journal
            </span>
          </div>
-         <div class='resource-description'>
-            Great beekeeping articles.
-         </div>
        </a>
-
-        More articles coming soon!
-     </div>
+      </div>
 
 
 
@@ -65,7 +70,7 @@
 
 
 
-     <div id="resources" class='content-pane'>
+     <div id="resources" class='content-pane hidden'>
        <p> Here are some of our favorite sites saved just for you. </p>
        <div class="tileContainer">
          <a href='https://www.mannlakeltd.com'>
