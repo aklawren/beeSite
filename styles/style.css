@@ -2,7 +2,11 @@ body {
     /*background-color: #ffc73c;*/
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: 'Amatic SC', cursive;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    background-image: url('../img/background-flowers.jpg');
 }
 /*section {
     width: 600px;
@@ -29,7 +33,7 @@ a:link, a:visited {
     margin: 10px;
     display:flex;
 }
-.articles{
+#articles{
    display:flex;
    flex-direction: row;
    justify-content: space-between;
@@ -52,18 +56,19 @@ img:hover {
 .styledLink:link{
   text-decoration: underline;
 }
-h1#pageTitle {
-    font-size: 4em;
-    font-weight: normal;
-    /*font-family: 'Cookie', cursive;*/
-    font-family: 'Sacramento', cursive;
-}
 section#mainSection {
     height: 300px;
-    background-color: #47b0d2;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     color: #eee;
     text-align: center;
     padding: 50px;
+    /* background-color: #d9af65; */
+    //background-color: #fffcc4;
+    //filter: sepia(1);
+    background-size:100%;
+
 }
 div#tab-bar {
     display: flex;
@@ -94,10 +99,14 @@ div#tab-bar {
     flex-wrap: wrap;
     justify-content: space-around;
 }*/
+.resource-title{
+    background-color: #ccccccb8;
+    font-family: 'Abril Fatface', cursive;
+}
 span.resource-title-text {
     font-size: 1.4em;
     border-bottom: .5px solid lightgray;
-    color: #358098;
+    color: #6c7575;
 }
 .resource-description {
     margin-top: 10px;
@@ -124,3 +133,96 @@ p.secondaryText {
     display: flex;
     justify-content: space-between;
 }*/
+
+
+/* styling top nav */
+ul {
+  list-style: none;
+  display: flex;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  margin-left: 0;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  height: 30px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom:0px;
+}
+
+li {
+    line-height: 30px;
+}
+
+#findOnFacebook{
+  background-image: url(../img/FindUsOnFacebook-lg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  display: block;
+min-height: 50px;
+  background-position:center;
+
+}
+
+/*section headers*/
+h1 {
+  //font-family: 'Abril Fatface', cursive;
+  font-family: 'Poppins', sans-serif;
+  text-transform: lowercase;
+  font-size: 50px;
+  text-align: center;
+  //color: #6c7575;
+  color: #6c757578;
+}
+
+section.content-section {
+    margin: 75px;
+    background-color: white;
+}
+
+#article-the-dance{
+  background-image: url('../img/beekeeping_class_icon.png');
+}
+
+.article-tile{
+  height: 300px;
+  width: 300px;
+  border: 1px solid lightgray;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-color:lightgray;
+}
+
+#contents{
+  background-color:white;
+  margin:75px;
+  padding-bottom:50px;
+}
+
+.page-title{
+  font-family: 'Cabin Sketch', cursive;
+    font-size: 75px;
+  margin-top: 30px;
+  margin: 10px;
+  display: block;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 75px;
+  text-transform: uppercase;
+  color: #6c7575;
+}
+#established-date{
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #1e79798f;
+  margin-bottom:0px;
+}
+.section-break{
+  border: 1px dashed #81b4b4;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+  width: 90%;
+  margin: auto;
+}
