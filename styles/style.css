@@ -184,6 +184,9 @@ section.content-section {
 #article-the-dance{
   background-image: url('../img/beekeeping_class_icon.png');
 }
+#article-2{
+  background-image: url('../img/beePic1.jpg');
+}
 
 .article-tile{
   height: 300px;
